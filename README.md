@@ -6,6 +6,11 @@
     2. [Коммиты](#коммиты)
 2. [Yandex.Tracker](#yandex-tracker)
 3. [Общее](#общее)
+4. [InfosecWeek](#infosecweek)
+    1. [Установка и запуск](#установка-и-запуск)
+        1. [Backend](#backend)
+        2. [Frontend](#frontend)
+        3. [Docker](#docker)
 
 ## Нейминг
 
@@ -36,4 +41,22 @@
 ## Общее
 **Не пушить в develop!**
 Работать на своих ветках, открывать MR (merge request), назначать меня ревьюером. Никаких самостоятельных мерджей в девелоп, форс пушей и прочего. Осваиваем best practices и никакова мерж конфликта.
+
+
+## InfosecWeek
+
+### Установка и запуск
+
+#### Backend
+Из /backend/:
+1. Создай и активируй виртуальное окружение: `python -m venv venv && source venv/bin/activate`
+2. Установи зависимости: `pip install -r requirements.txt`
+3. Запусти: `fastapi dev wsgi.py`
+
+#### Frontend
+Из /frontend/:
+*В ПРОЦЕССЕ*
+
+#### Docker
+*В ПРОЦЕССЕ*
 
