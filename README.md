@@ -49,14 +49,23 @@
 
 #### Backend
 Из /backend/:
+
 1. Создай и активируй виртуальное окружение: `python -m venv venv && source venv/bin/activate`
 2. Установи зависимости: `pip install -r requirements.txt`
 3. Запусти: `fastapi dev wsgi.py`
 
+ИЛИ
+
+1. Собери образ: `docker build . -t isw-back`
+2. Запусти контейнер: `docker run isw-back`
+
+Для получения адреса, на котором хостится приложение, посмотри айдишник **контейнера** (`docker ps`) и достань адрес через `docker ps <ID> | grep IPAddress`.
+
+Остановить контейнер можно мануально на Ctrl+C, а можно командой `docker stop <ID>`.
+
 #### Frontend
-Из /frontend/:
 *В ПРОЦЕССЕ*
 
-#### Docker
+#### Docker Compose
 *В ПРОЦЕССЕ*
 
