@@ -8,8 +8,8 @@ class User(declarative_base()):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     first_name = Column(String, nullable=False, index=True)
+    middle_name = Column(String, nullable=True, index=True)
     last_name = Column(String, nullable=False, index=True)
-    patronymic = Column(String, nullable=True, index=True)
     email = Column(String, unique=False, nullable=True)
     hashed_password = Column(String, nullable=False)
 
